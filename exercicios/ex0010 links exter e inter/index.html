@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com links</title>
+</head>
+<body>
+    <h1>usando links externos</h1>
+    <p>voce pode acessar meu <a href="https://www.youtube.com/@Emanoel_Sampaio" target="_blank" rel="external">link do meu canal do youtube</a></p>
+    <!--ao fazer a tag <a> devemos ao final da url, escrever (target blank rel external) para assim direcionar o link para a abertura de outra aba, e nao somente entrar por cima do nosso site)-->
+        <p>voce pode abrir o link do instagram por exemplo</p>
+        <a href="https://www.instagram.com/" target="_blank" rel="external">abra aqui</a>
+    <h2>usando links internos</h2>
+    <p>esta e a primeira pagina do meu site, se voce quiser pode acessar a <a href="pag002.html" rel="next">minha segunda pagina</a></p>
+    <!--para ajudar o google voce tem que botar (rel next apos o (pag002.html))-->
+     <!--no caso para links que eu nao quero dar val(nao quero que o mecanismo de busca olhe) e preciso, primeiro botar o link normalmente ( <a> target blank rel, depois usar o (no follow))-->
+        <p>voce tambem pode acessar nossa <a href="noticia/pag003.html" rel="next">pagina de noticias</a></p>
+        <h1>links para donwload</h1>
+        <ul>
+            <li><a href="livro/minhafotoempdf.pdf" type="application/pdf">baixar minha foto</a></li><!--nesses casos e sempre bom fazer uma lista quando a mais de um arquivo para ser baixado, <ul> <li> depois abrimos a tag <a>, apos isso clicamos em control espaço,selecionamos o arquivo desejado e depois colocamos o (type application/pdf para arquivos pdf ou .zip para arquivos zip. para consultar outros metodos basta acessar o site media types)-->
+            <li><a href="livro/meu livro.zip.zip" type="application/zip">livro compactado em zip</a></li>
+        </ul>
+
+        
+</body>
+</html>

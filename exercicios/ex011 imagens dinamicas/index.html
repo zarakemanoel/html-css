@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midia em html  5</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>tente abrir esse site em varios dispositivos ou simplismente aumente ou diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+       <img src="imagens/foto-g.png" alt="imagem flexivel"> </picture>
+    <!--tags novas: <picture> (aqui tera umma imagem) <source> (multiplos recursos de midia)-->
+        <!--usando o (max-width, por padrao ele usara a imagem maior, que e a de 1050px apor isso, em srcet devemos escrever imagens/foto-m ou p.png ou outras maneiras de acordo como a foto foi salva na maquina)-->
+        <h1>Reproduzindo Audio</h1>
+        <p>vamos aprender a reproduzir audios sem direitos autorais</p>
+       
+       
+        <audio preload="metadata" controls>
+        <source src="midia/robotcity-quincas moreira.mp3" type="audio/mpeg">
+        <source src="midia/robotcity-quincas moreira.ogg" type="audio/ogg">
+        <p>infelizmente o seu navegador nao e bom, baixe o audio aqui</p>
+        <a href="midia/robotcity-quincas moreira.mp3">audio robotcity</a>
+    </audio>
+      
+    <br>
+    <picture>
+    <source media="(max-width: 1050)" srcset="imagens/foto.png" type="image/png">
+  <img src="imagens/html200.webp" alt="imagem html200"><!--como a imagem e de 200px, ela cabe em todos os 3 dispositivos-->
+</picture>
+
+
+<br>
+<audio preload="metadata" controls>
+    <source src="midia/My Synth Bae - The Soundlings.mp3" type="audio/mpeg">
+</audio>
+<!--para deixar o audio automatico, basta usar (autoplay) no lugar de controls, mas nao funcionou no google-->
+<br>
+<picture> 
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="foto G">
+</picture> <br>
+<audio preload="metadata" controls>
+    <source src="midia/My Synth Bae - The Soundlings.mp3" type="audio/mpeg">
+
+    
+</audio>
+</body>
+</html>
