@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="get">
+        <p>
+            <label for="iNumero1">Numero 1</label>
+            <input type="number" name="Numero1" id="iNumero1" min="0" max="1000" required oninput="iSoma.innerHTML= Number(iNumero1.value)+ Number (iNumero2.value)">
+        </p>
+        <p>
+            <label for="iNumero2">Numero 2</label>
+            <input type="number" name="Numero2" id="iNumero2" min="0" max="50" required oninput="iSoma.innerHTML= Number(iNumero1.value)+ Number (iNumero2.value)">
+        </p>
+        <p>
+            <label for="get">Soma</label>
+            <output name="Soma" id="iSoma">0</output>
+            
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+</body>
+</html>
