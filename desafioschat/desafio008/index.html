@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .pai{
+        background-color: rgb(238, 238, 238);
+        display: flex;
+        justify-content: space-between;
+    }
+    .filho1{
+        background-color: bisque;
+        height: 200px;
+        width: 200px;
+    }
+    .filho2{
+        background-color: cadetblue;
+        height: 200px;
+        width: 200px;
+    }
+    .filho3{
+        background-color: chocolate;
+        height: 200px;
+        width: 200px;
+    }
+    @media (max-width: 600px){
+        .pai{
+            width: 300px;
+            height: 400px;
+        }
+    }
+</style>
+<body>
+    <nav class="pai">
+        <div class="filho1"></div>
+        <div class="filho2"></div>
+        <div class="filho3"></div>
+    </nav>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .galeria img {
+    width: calc(33.333% - 10px);
+    max-width: 100%;
+  }
+  
+  /* Layout mobile */
+  @media (max-width: 600px) {
+    .galeria img {
+      width: 100%;
+    }
+  }
+  </style>
+<body>
+    <div class="galeria">
+        <img src="https://via.placeholder.com/150" alt="Imagem 1">
+        <img src="https://via.placeholder.com/150" alt="Imagem 2">
+        <img src="https://via.placeholder.com/150" alt="Imagem 3">
+        <img src="https://via.placeholder.com/150" alt="Imagem 4">
+        <img src="https://via.placeholder.com/150" alt="Imagem 5">
+        <img src="https://via.placeholder.com/150" alt="Imagem 6">
+      </div>      
+</body>
+</html>
