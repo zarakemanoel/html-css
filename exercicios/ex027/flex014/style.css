@@ -20,4 +20,37 @@ header, section.normal{
 section.flexcontent{
     background-color: rgb(141, 141, 141);
     padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+section > article{
+    
+}
+article.text-media{
+   display: flex; 
+   flex-flow: row wrap;
+   justify-content: space-between;
+}
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+article > div.text{
+    flex: 1 1 500px;
+    
+}
+article > div.media{
+    flex: 1 0 500px;
+
+}
+div.media > img{
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+div.media > iframe{
+    display: block;
+    margin: auto;
+    width: 90%;
 }
